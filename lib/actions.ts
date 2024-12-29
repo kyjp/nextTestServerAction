@@ -10,6 +10,10 @@ export async function handleAction(formData: FormData) {
         const postTextSchema = z.string().min(1, 'テキストを入力してください。').max(140, '140文字以内で入力してください。')
         const validatedPostText = postTextSchema.parse(inputText)
         console.log('success')
+        return {
+            error: undefined,
+            success: true
+        }
     } catch (error) {
         console.log('error')
         if(error instanceof z.ZodError) {

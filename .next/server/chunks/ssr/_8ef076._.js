@@ -100,6 +100,10 @@ async function /*#__TURBOPACK_DISABLE_EXPORT_MERGING__*/ handleAction(formData) 
         const postTextSchema = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["z"].string().min(1, 'テキストを入力してください。').max(140, '140文字以内で入力してください。');
         const validatedPostText = postTextSchema.parse(inputText);
         console.log('success');
+        return {
+            error: undefined,
+            success: true
+        };
     } catch (error) {
         console.log('error');
         if (error instanceof __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$lib$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["z"].ZodError) {
