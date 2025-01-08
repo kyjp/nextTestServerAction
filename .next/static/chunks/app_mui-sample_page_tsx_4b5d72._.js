@@ -6,8 +6,8 @@
   "path": "static/chunks/app_mui-sample_page_tsx_4b5d72._.js",
   "chunks": [
     "static/chunks/node_modules_@mui_system_esm_44a814._.js",
-    "static/chunks/node_modules_@mui_material_9dd2b8._.js",
-    "static/chunks/node_modules_48f8eb._.js",
+    "static/chunks/node_modules_@mui_material_3a4897._.js",
+    "static/chunks/node_modules_7ea08f._.js",
     "static/chunks/_83e41a._.js"
   ],
   "source": "dynamic"

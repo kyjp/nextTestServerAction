@@ -1,10 +1,11 @@
 'use client'
-import { Box, Container, FormControlLabel, FormLabel, InputLabel, MenuItem, Radio, RadioGroup, Select, TextField, Typography } from '@mui/material'
+import { Box, Button, Container, FormControlLabel, FormLabel, InputLabel, MenuItem, Radio, RadioGroup, Select, TextField, Typography } from '@mui/material'
+import SendIcon from "@mui/icons-material/Send"
 import React from 'react'
 
 const Sample = () => {
   return (
-    <Container>
+    <Container maxWidth="md">
         <p>test</p>
         <Box sx={{
             marginTop: 1,
@@ -12,7 +13,7 @@ const Sample = () => {
             flexDirection: "column",
             alignItems: "center",
             p: 2,
-            border: "1px dash gray"
+            border: "1px dashed gray"
         }}>
             <p>test2</p>
             <p>test3</p>
@@ -26,6 +27,7 @@ const Sample = () => {
                 id="outlined"
                 label="outlined"
                 variant="outlined"
+                name="outlined"
                 defaultValue={"test"}
                 onChange={e => console.log(e.target.value)}
             />
@@ -41,9 +43,10 @@ const Sample = () => {
                     年齢
                 </InputLabel>
                 <Select
-                    labelId="demo-simple-select-label"
+                    labelId="demo-sample-select-label"
                     id="demo-simple-select"
                     label="Age"
+                    name="age"
                     defaultValue={10}
                     fullWidth
                 >
@@ -65,6 +68,10 @@ const Sample = () => {
                     <FormControlLabel value="male" control={<Radio />} label="male" />
                     <FormControlLabel value="other" control={<Radio />} label="other" />
                 </RadioGroup>
+                <TextField id="outline-basic" label="コメント" variant="outlined" fullWidth sx={{mt: 2}} name="comment"/>
+                <Button variant="contained" sx={{mt: 2}} endIcon={<SendIcon />} fullWidth>
+                    送信
+                </Button>
             </Box>
         </Box>
     </Container>
