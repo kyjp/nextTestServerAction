@@ -1,4 +1,4 @@
 {
-  "/mui-sample/page": "app/mui-sample/page.js",
+  "/shadcn-sample/page": "app/shadcn-sample/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js"
 }
